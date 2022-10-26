@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
     res.write("Computes the values for Math.abs and math.sin function."+"\n")
     res.write('Math.cos() applied to '+value+" is "+Math.cos(value,value)+"\n");
     res.write('Math.asin()  applied to '+value+" is "+Math.asin(value)+"\n");
-    res.write('Math.asinh() applied to '+value+" is "+Math.asinh(value)+"\n");
+    res.end('Math.asinh() applied to '+value+" is "+Math.asinh(value));
  });
 
 module.exports = router;
